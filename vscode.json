@@ -1,0 +1,10 @@
+{
+    "workbench.iconTheme": "vscode-great-icons",
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "editor.cursorStyle": "block",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#00ff99"
+    },
+    "typescript.check.npmIsInstalled": false
+}
