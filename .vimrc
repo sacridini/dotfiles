@@ -96,7 +96,10 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
-
+" ==== outras configs
+map <C-x> <Esc>dd<Esc> " cut
+map <C-v> <Esc>p<Esc> " paste
+map <C-o> <Esc>:Ex<Esc>
 
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
