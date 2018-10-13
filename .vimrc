@@ -82,6 +82,13 @@ set st=4 sw=4 et
 set shiftwidth=4
 set tabstop=4
 set t_Co=256
+set hlsearch
+
+let &t_ti.="\e[1 q"
+let &t_Si.="\e[5 q"
+let &t_Ei.="\e[1 q"
+let &t_te.="\e[0 q"
+
 
 " ==== disable swap file warning
 set shortmess+=A
