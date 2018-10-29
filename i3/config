@@ -179,7 +179,6 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# exec firefix
 exec google-chrome
 exec spotify
 exec nautilus
