@@ -93,7 +93,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 set $workspace1 "1: Web"
-set $workspace2 "2: Vim"
+set $workspace2 "2: Code"
 set $workspace3 "3: Files"
 set $workspace10 "10: Music"
 
@@ -121,6 +121,7 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
+assign [class="Google-chrome"] $workspace1
 assign [class="Nautilus"] $workspace3
 for_window [class="Spotify"] move to workspace $workspace10
 
@@ -179,6 +180,8 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+
+exec_always feh --bg-scale /home/eduardo/Pictures/wallpaper.jpg
 exec google-chrome
 exec spotify
 exec nautilus
