@@ -23,8 +23,11 @@
  )
 (put 'upcase-region 'disabled nil)
 
+;; tira o som irritante
 (setq visible-bell 1)
 
+
+;; C-d duplica a linha
 (defun duplicate-line()
   (interactive)
   (move-beginning-of-line 1)
