@@ -40,3 +40,15 @@
   (yank)
 )
 (global-set-key (kbd "C-d") 'duplicate-line)
+
+;; Esconde toolbar, menu e scroll
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+
+;; Highlight current line
+(global-hl-line-mode 1)
+
+;; Display time in modeline
+(setq format-time-format "%d %b %Y %H:%M")
+(display-time-mode 1)
