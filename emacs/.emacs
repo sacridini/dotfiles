@@ -65,3 +65,5 @@
 
 ;; Atualiza o arquivo aberto no emacs quando for modificado por outro programa
 (global-auto-revert-mode 1)
+
+(setq make-backup-files nil) ; stop creating ~ files
