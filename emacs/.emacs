@@ -52,3 +52,16 @@
 ;; Display time in modeline
 (setq format-time-format "%d %b %Y %H:%M")
 (display-time-mode 1)
+
+;; Save all backup files in one folder.
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+
+;; ido-mode
+(require 'ido)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+(setq ido-file-extensions-order '(".org" ".fountain" ".R" ".el"))
+
+;; Atualiza o arquivo aberto no emacs quando for modificado por outro programa
+(global-auto-revert-mode 1)
