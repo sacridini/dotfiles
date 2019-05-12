@@ -26,6 +26,8 @@
 ;; tira o som irritante
 (setq visible-bell 1)
 
+;; Esconde o splash screen
+(setq inhibit-startup-screen t)
 
 ;; C-d duplica a linha
 (defun duplicate-line()
