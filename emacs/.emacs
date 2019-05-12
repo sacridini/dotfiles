@@ -67,3 +67,13 @@
 (global-auto-revert-mode 1)
 
 (setq make-backup-files nil) ; stop creating ~ files
+
+
+;; 4 tab space for Python code
+(setq-default tab-width 4)
+(setq-default tab-stop-list (list 4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
+(add-hook 'python-mode-hook
+      (lambda ()
+        (setq indent-tabs-mode t)
+        (setq tab-width 4)
+        (setq python-indent-offset 4)))
