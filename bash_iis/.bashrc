@@ -148,14 +148,5 @@ export PATH=$PATH:/home/eduardo/development/cpp
 alias z='cd ..'
 alias geo='source activate geo'
 alias dgeo='source deactivate geo'
-alias cv='source activate cv'
-alias dcv='source deactivate cv'
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias t="tree"
-
-
-# Instalacao das Funcoes ZZ (www.funcoeszz.net)
-export ZZOFF=""  # desligue funcoes indesejadas
-export ZZPATH="/home/eduardo/funcoeszz/funcoeszz"  # script
-export ZZDIR="/home/eduardo/funcoeszz/zz"    # pasta zz/
-source "$ZZPATH"
+alias finder="find . -type f -print | grep "
