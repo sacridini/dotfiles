@@ -147,6 +147,6 @@ export PATH=$PATH:/home/eduardo/development/cpp
 
 alias z='cd ..'
 alias geo='source activate geo'
-alias dgeo='source deactivate geo'
+alias dgeo='conda deactivate geo'
 alias t="tree"
 alias finder="find . -type f -print | grep "
