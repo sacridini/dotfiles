@@ -142,7 +142,6 @@ ex ()
 
 # added by Miniconda2 installer
 export PATH="/home/eduardo/miniconda2/bin:$PATH"
-export PATH=$PATH:/home/eduardo/Documents/julia-1.0.3/bin
 export PATH=$PATH:/home/eduardo/development/cpp
 
 alias z='cd ..'
