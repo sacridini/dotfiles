@@ -1,4 +1,4 @@
-;; Remover boas vindas
+-;; Remover boas vindas
 (setq inhibt-startup-message t)
 
 ;; Esconde toobal, menu e scroll
@@ -132,6 +132,12 @@
   (progn
     (ac-config-default)
     (global-auto-complete-mode t)))
+
+(use-package company
+  :ensure t
+  :config
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 3))
 
 ;; MELPA stuff 
 (custom-set-variables
