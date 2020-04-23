@@ -47,7 +47,10 @@
 ;; Mudar de janela
 (global-set-key (kbd "C-<tab>") 'other-window)
 (global-set-key (kbd "M-<down>") 'enlarge-window)
-		 
+(global-set-key (kbd "M-<up>") 'shrink-window)		 
+(global-set-key (kbd "M-<left>") 'enlarge-window-horizontally)
+(global-set-key (kbd "M-<right>") 'shrink-window-horizontally)
+
 
 
 
