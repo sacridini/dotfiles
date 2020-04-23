@@ -53,7 +53,6 @@
 
 
 
-
 ;; CUA Mode
 (cua-mode t)
 (setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangles commands
@@ -73,22 +72,19 @@
 
 ;; Color theme
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(default ((t (:foreground "#d3b58d" :background "#041818"))))
  '(custom-group-tag-face ((t (:underline t :foreground "lightblue"))) t)
  '(custom-variable-tag-face ((t (:underline t :foreground "lightblue"))) t)
  '(font-lock-builtin-face ((t nil)))
- ; '(font-lock-comment-face ((t (:foreground "yellow"))))
  '(font-lock-comment-face ((t (:foreground "#3fdflf"))))
- '(font-lock-function-name-face ((((class color) (background dark)) (:foreground "white")))) 
- '(font-lock-keyword-face ((t (:foreground "white" ))))
- ; '(font-lock-string-face ((t (:foreground "gray160" :background "gray16"))))
+ '(font-lock-function-name-face ((((class color) (background dark)) (:foreground "white"))))
+ '(font-lock-keyword-face ((t (:foreground "white"))))
  '(font-lock-string-face ((t (:foreground "#0fdfaf"))))
- '(font-lock-variable-name-face ((((class color) (background dark)) (:foreground "#c8d4ec"))))  
-; '(font-lock-warning-face ((t (:foreground "#695a46"))))
+ '(font-lock-variable-name-face ((((class color) (background dark)) (:foreground "#c8d4ec"))))
  '(font-lock-warning-face ((t (:foreground "#504038"))))
  '(highlight ((t (:foreground "navyblue" :background "darkseagreen2"))))
  '(mode-line ((t (:inverse-video t))))
@@ -118,6 +114,7 @@
 ;; MELPA -Repositório
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
+
 (package-initialize) ; iniciar pacotes
 
 (unless (package-installed-p 'use-package)
@@ -136,7 +133,6 @@
     (ac-config-default)
     (global-auto-complete-mode t)))
 
-
 ;; MELPA stuff 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -149,9 +145,4 @@
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (wheatgrass)))
  '(package-selected-packages (quote (try use-package))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
