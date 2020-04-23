@@ -10,7 +10,7 @@
 (global-linum-mode t)
 
 ;; Tamanho da fonte
-(set-face-attribute 'default nil :height 120)
+(set-face-attribute 'default nil :height 100)
 
 ;; Tira som irritante (Windows)
 (setq visible-bell 1)
@@ -19,7 +19,7 @@
 (setq inhibit-startup-screen 1)
 
 ;; Ilumina a linha atual
-(global-hl-line-mode 1)
+;; (global-hl-line-mode 1)
 
 ;; Sem arquivos backup 
 (setq make-backup-files nil)
@@ -31,6 +31,7 @@
 (global-auto-revert-mode 1)
 
 
+;; Atalhos
 ;; C-d duplica a linha
 (defun duplicate-line()
   (interactive)
@@ -42,6 +43,11 @@
   (yank)
 )
 (global-set-key (kbd "C-d") 'duplicate-line)
+
+;; Mudar de janela
+(global-set-key (kbd "C-<tab>") 'other-window)
+(global-set-key (kbd "M-<down>") 'enlarge-window)
+		 
 
 
 
@@ -60,6 +66,46 @@
 (ido-mode 1)
 (setq ido-file-extentions-order '(".org" ".fountain" ".R" ".el"))
 
+
+
+;; Color theme
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(default ((t (:foreground "#d3b58d" :background "#041818"))))
+ '(custom-group-tag-face ((t (:underline t :foreground "lightblue"))) t)
+ '(custom-variable-tag-face ((t (:underline t :foreground "lightblue"))) t)
+ '(font-lock-builtin-face ((t nil)))
+ ; '(font-lock-comment-face ((t (:foreground "yellow"))))
+ '(font-lock-comment-face ((t (:foreground "#3fdflf"))))
+ '(font-lock-function-name-face ((((class color) (background dark)) (:foreground "white")))) 
+ '(font-lock-keyword-face ((t (:foreground "white" ))))
+ ; '(font-lock-string-face ((t (:foreground "gray160" :background "gray16"))))
+ '(font-lock-string-face ((t (:foreground "#0fdfaf"))))
+ '(font-lock-variable-name-face ((((class color) (background dark)) (:foreground "#c8d4ec"))))  
+; '(font-lock-warning-face ((t (:foreground "#695a46"))))
+ '(font-lock-warning-face ((t (:foreground "#504038"))))
+ '(highlight ((t (:foreground "navyblue" :background "darkseagreen2"))))
+ '(mode-line ((t (:inverse-video t))))
+ '(region ((t (:background "blue"))))
+ '(widget-field-face ((t (:foreground "white"))) t)
+ '(widget-single-line-field-face ((t (:background "darkgray"))) t))
+
+(global-font-lock-mode 1)
+(set-cursor-color "lightgreen")
+(set-background-color "#072626")
+(global-set-key [C-return] 'save-buffer)
+
+;(set-face-attribute 'default nil :font "Anonymous Pro-14")
+; (set-face-attribute 'default nil :font "Consolas-174")
+
+(set-face-foreground 'font-lock-builtin-face         "lightgreen")
+
+
+;; Cursor color theme
+(set-cursor-color "#adebad")
 
 
 ;; Pacotes
@@ -98,7 +144,7 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(custom-enabled-themes (quote (manoj-dark)))
+ '(custom-enabled-themes (quote (wheatgrass)))
  '(package-selected-packages (quote (try use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
