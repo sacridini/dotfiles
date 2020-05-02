@@ -143,6 +143,7 @@ ex ()
 # added by Miniconda2 installer
 export PATH="/home/eduardo/miniconda2/bin:$PATH"
 export PATH=$PATH:/home/eduardo/development/cpp
+export PATH=$PATH:./
 
 alias z='cd ..'
 alias geo='source activate geo'
