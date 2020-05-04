@@ -30,6 +30,8 @@
 ;; Atualiza o arquivo aberto no emacs quando for modificado por outro programa
 (global-auto-revert-mode 1)
 
+;; Macro para compilar c++ [F4]
+(global-set-key [f4] 'compile)
 
 ;; Atalhos
 ;; C-d duplica a linha
@@ -145,4 +147,3 @@
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (wheatgrass)))
  '(package-selected-packages (quote (try use-package))))
-

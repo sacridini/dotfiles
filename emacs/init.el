@@ -30,6 +30,8 @@
 ;; Atualiza o arquivo aberto no emacs quando for modificado por outro programa
 (global-auto-revert-mode 1)
 
+;; Macro para compilar c++ [F4]
+(global-set-key [f4] 'compile)
 
 ;; Atalhos
 ;; C-d duplica a linha
