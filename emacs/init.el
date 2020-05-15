@@ -46,6 +46,9 @@
 )
 (global-set-key (kbd "C-d") 'duplicate-line)
 
+;; C-k apaga a linha onde o cursor está posicionado
+(global-set-key (kbd "C-k") 'kill-whole-line)
+
 ;; Mudar de janela
 (global-set-key (kbd "C-<tab>") 'other-window)
 (global-set-key (kbd "M-<down>") 'enlarge-window)
@@ -147,4 +150,3 @@
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (wheatgrass)))
  '(package-selected-packages (quote (try use-package))))
-

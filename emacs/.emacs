@@ -46,6 +46,9 @@
 )
 (global-set-key (kbd "C-d") 'duplicate-line)
 
+;; C-k apaga a linha onde o cursor está posicionado
+(global-set-key (kbd "C-k") 'kill-whole-line)
+
 ;; Mudar de janela
 (global-set-key (kbd "C-<tab>") 'other-window)
 (global-set-key (kbd "M-<down>") 'enlarge-window)
