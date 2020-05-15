@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -141,8 +141,9 @@ ex ()
 }
 
 # added by Miniconda2 installer
-export PATH="/home/eduardo/miniconda2/bin:$PATH"
-export PATH=$PATH:/home/eduardo/development/cpp
+export PATH=~/miniconda2/bin:$PATH
+export PATH=$PATH:~/development/cpp
+export PATH=$PATH:~/development/shell
 export PATH=$PATH:./
 
 alias z='cd ..'
@@ -150,3 +151,4 @@ alias geo='source activate geo'
 alias dgeo='conda deactivate geo'
 alias t="tree"
 alias finder="find . -type f -print | grep "
+alias server="ssh -p65222 eduardo@201.17.19.72"
