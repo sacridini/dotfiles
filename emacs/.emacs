@@ -33,6 +33,9 @@
 ;; Macro para compilar c++ [F4]
 (global-set-key [f4] 'compile)
 
+;; Tab default para 4 espaços
+(setq default-tab-width 4)
+
 ;; Atalhos
 ;; C-d duplica a linha
 (defun duplicate-line()
@@ -150,3 +153,4 @@
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (wheatgrass)))
  '(package-selected-packages (quote (try use-package))))
+
