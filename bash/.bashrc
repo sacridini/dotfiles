@@ -146,6 +146,7 @@ export PATH=$PATH:~/development/cpp
 export PATH=$PATH:~/development/shell
 export PATH=$PATH:./
 
+alias cp='cp -iv' # verbose cp
 alias z='cd ..'
 alias geo='source activate geo'
 alias dgeo='conda deactivate geo'
