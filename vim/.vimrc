@@ -12,7 +12,7 @@ set number
 set hlsearch
 set ruler
 highlight Comment ctermfg=green
-colorscheme ron
+colorscheme murphy
 set visualbell
 map <C-c> <ESC>yy<ESC> " copy
 map <C-v> <ESC>p<ESC> " paste
