@@ -145,11 +145,27 @@ export PATH=~/miniconda2/bin:$PATH
 export PATH=$PATH:~/development/cpp
 export PATH=$PATH:~/development/shell
 export PATH=$PATH:./
+export PATH=$PATH:/opt/geogig/bin
 
-alias cp='cp -iv' # verbose cp
+alias cp='cp -iv'
 alias z='cd ..'
 alias geo='source activate geo'
 alias dgeo='conda deactivate geo'
 alias t="tree"
 alias finder="find . -type f -print | grep "
 alias server="ssh -p65222 eduardo@201.17.19.72"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/iis_backup/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/iis_backup/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/iis_backup/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/iis_backup/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
