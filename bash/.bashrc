@@ -153,7 +153,6 @@ alias geo='source activate geo'
 alias dgeo='conda deactivate geo'
 alias t="tree"
 alias finder="find . -type f -print | grep "
-alias server="ssh -p65222 eduardo@201.17.19.72"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
