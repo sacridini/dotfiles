@@ -1,11 +1,11 @@
 syntax on
-" set tabstop=2
+set tabstop=4
 set ts=4
 set sts=4
 set autoindent
 set smartindent
 set smarttab
-set expandtab
+" set expandtab
 set shiftwidth=2
 set ai
 set number
@@ -14,6 +14,7 @@ set ruler
 highlight Comment ctermfg=green
 colorscheme murphy
 set visualbell
+set directory^=$HOME/.vim/tmp//
 map <C-c> <ESC>yy<ESC> " copy
 map <C-v> <ESC>p<ESC> " paste
 map <C-d> <ESC>yyp<ESC> " duplicate line
