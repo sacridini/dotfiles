@@ -150,3 +150,4 @@ alias z='cd ..'
 alias t="tree"
 alias finder="find . -type f -print | grep "
 alias fman="compgen -c | fzf | xargs man"
+alias topsize=" du -ah . | sort -hr | head -n 10"
