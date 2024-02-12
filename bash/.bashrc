@@ -149,3 +149,4 @@ alias cp='cp -iv'
 alias z='cd ..'
 alias t="tree"
 alias finder="find . -type f -print | grep "
+alias fman="compgen -c | fzf | xargs man"
